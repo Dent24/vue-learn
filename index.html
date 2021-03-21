@@ -11,7 +11,12 @@
         <br>
 
         <ol>
-            <todo-item></todo-item>
+            <todo-item
+                v-for="item in todoList"
+                :key="item.index"
+                :title="item.title"
+                :num="item.num"
+            ></todo-item>
         </ol>
     </div>
 
